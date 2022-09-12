@@ -1,0 +1,36 @@
+<form [formGroup]="formGroup">
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label>Placa</label>
+        <input type="text" class="form-control" mask="SSS0A00" formControlName="placa" placeholder="ex: BRA0A18" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label>Chassi</label>
+        <input type="text" class="form-control" formControlName="chassi"  placeholder="Chassi" value="" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label>Renavam</label>
+          <input type="text" class="form-control" formControlName="renavam" placeholder="Renavam" value="" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Modelo</label>
+          <input type="text" class="form-control" formControlName="modelo" placeholder="Modelo" value="" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label>Marca</label>
+          <input type="text" class="form-control" formControlName="marca"  placeholder="Marca" value="" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Ano</label>
+          <input type="text" class="form-control" formControlName="ano"  placeholder="Ano" value="" required>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit" (click)="enviar()">salvar</button>
+</form>
